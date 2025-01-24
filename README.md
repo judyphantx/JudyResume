@@ -6,3 +6,4 @@ Resources:
 https://www.youtube.com/watch?v=FazgJVnrVuI
 https://fontawesome.com/
 https://undraw.co/illustrations
+https://www.pexels.com/

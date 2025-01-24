@@ -212,10 +212,178 @@ transition: all 0.3s ease;
     grid-template-columns: 1fr 1fr;
     justify-self: center;
     margin: 0 auto;
+    height: 90vh;
+    background-color: #141414;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
 }
 
+.main_content h1{
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
 
+.main_content h2{
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #b721ff 0%, #21df4d 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
 
+.main_content p {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.main_btn{
+    font-size: 1rem;
+    background-image: linear-gradient(to top, #f77062 0%, #21df4d 100%);
+    padding: 14px 32px;
+    border: none;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.main_btn a{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main_btn:after{
+    position: absolute;
+    content: '';
+    top:0;
+    left:0;
+    width:0;
+    height: 100%;
+    background: #4837ff;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.main_btn:hover{
+    color: #fff;
+}
+
+.main_btn:hover:after{
+    width: 100%;
+}
+
+.main_img--container{
+    text-align:center;
+}
+
+#main_img{
+    height: 80%;
+    width: 80%;
+}
+
+/*Mobile Responsive*/
+@media screen and (max-width:768px){
+    .main_container{
+        display:grid;
+        grid-template-columns:auto;
+        align-items:center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+    }
+
+    .main_content{
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .main_content h1{
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .main_content h2{
+        font-size:3rem;
+    }
+
+    .main_content p{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:480px){
+    .main_content h1{
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+
+    .main_content h2{
+        font-size:2rem;
+    }
+
+    .main_content p{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .main_btn{
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
+}
+
+/*Services Section CSS */
+.services{
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.services h1{
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    background-size:100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.services_container{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.services_card{
+    margin:1rem;
+    height: 525px;
+    width: 400px;
+    border-radius:4px;
+    background-image:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6)100%), url('/images/pic2.jpg');
+    background-size: cover;
+}
 
 
 
