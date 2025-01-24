@@ -202,7 +202,17 @@ transition: all 0.3s ease;
 
 }
 
+/*Hero Section CSS */
+.main{
+    background-color: #141414;
+}
 
+.main_container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    margin: 0 auto;
+}
 
 
 
