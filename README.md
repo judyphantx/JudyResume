@@ -4,4 +4,5 @@ Learning how to create a personal website from scratch with HTML, CSS, and JavaS
 
 Resources:
 https://www.youtube.com/watch?v=FazgJVnrVuI
-
+https://fontawesome.com/
+https://undraw.co/illustrations
