@@ -5,8 +5,9 @@
     font-family: 'Kumbh Sans',sans-serif;
 }
 
+/*Navigation Bar */
 .navbar{
-   background: #131313;
+   background: #fff;
    height: 80px;
    display: flex;
    justify-content: center;
@@ -29,8 +30,8 @@
 }
 
 #navbar_logo{
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-color: #6c63ff;
+    background-image: linear-gradient(to top, #6c63ff 0%, #ffb199 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -88,17 +89,17 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f77062;
+    background: #6c63ff;
     color: #fff;
 }
 
 .button:hover {
-background: #4837ff;
+background: #720de6;
 transition: all 0.3s ease;
 }
 
 .navbar_links:hover {
-    color: #f77062;
+    color: #720de6;
     transition: all 0.3s ease;
 }
 
@@ -128,7 +129,7 @@ transition: all 0.3s ease;
     }
 
     .navbar_menu.active{
-        background: #131313;
+        background: #6c63ff;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -138,16 +139,16 @@ transition: all 0.3s ease;
     }
 
     #navbar_logo{
-        padding-left: 25px;
+        padding-left: 250px;
     }
 
-    /*Navigation bar */
+    /*Stacked navigation bar */
     .navbar_toggle .bar{
         display: block;
         width:25px;
         height: 3px;
         margin: 5px auto;
-        background: #fff;
+        background: #131313;
         transition: all 0.3s ease-in-out;
     }
 
@@ -204,16 +205,17 @@ transition: all 0.3s ease;
 
 /*Hero Section CSS */
 .main{
-    background-color: #141414;
+    background-color: #fff;
 }
 
+/*Container where the hero section sits */
 .main_container{
     display:grid;
     grid-template-columns: 1fr 1fr;
     justify-self: center;
     margin: 0 auto;
-    height: 90vh;
-    background-color: #141414;
+    height: 51.9vh;
+    background-color: #fff;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -221,9 +223,9 @@ transition: all 0.3s ease;
 }
 
 .main_content h1{
-    font-size: 4rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    font-size: 7rem;
+    background-color: #6c63ff;
+    background-image: linear-gradient(to top, #6c63ff 0%, #ffb199 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -232,9 +234,9 @@ transition: all 0.3s ease;
 }
 
 .main_content h2{
-    font-size: 4rem;
+    font-size: 3rem;
     background-color: #ff8177;
-    background-image: linear-gradient(to top, #b721ff 0%, #21df4d 100%);
+    background-image: linear-gradient(to top, #6c63ff 0%, #ffb199 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -248,9 +250,10 @@ transition: all 0.3s ease;
     font-weight: 700;
 }
 
+/*
 .main_btn{
     font-size: 1rem;
-    background-image: linear-gradient(to top, #f77062 0%, #21df4d 100%);
+    background-image: linear-gradient(to top, #6c63ff 0%, #ffb199 100%);
     padding: 14px 32px;
     border: none;
     color: #fff;
@@ -260,6 +263,7 @@ transition: all 0.3s ease;
     transition: all 0.35s;
     outline: none;
 }
+    */
 
 .main_btn a{
     position: relative;
@@ -351,7 +355,7 @@ transition: all 0.3s ease;
 
 /*Services Section CSS */
 .services{
-    background: #141414;
+    background: #6a63e7;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -359,10 +363,13 @@ transition: all 0.3s ease;
 }
 
 .services h1{
-    background-color: #ff8177;
-    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    background-color: #fff ;
+    /* background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);*/
+    background-image: #fff
     background-size:100%;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+    /*how far the heading is from the top of section */
+    margin-top: 5rem;
     font-size: 2.5rem;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -374,10 +381,11 @@ transition: all 0.3s ease;
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
+    height: 100vh;
 }
 
 .services_card{
-    margin:1rem;
+    margin:2rem;
     height: 525px;
     width: 400px;
     border-radius:4px;
