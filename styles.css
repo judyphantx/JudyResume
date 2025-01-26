@@ -2,7 +2,7 @@
     box-sizing : border-box;
     margin:0;
     padding:0 ;
-    font-family: 'Kumbh Sans',sans-serif;
+    font-family: "DejaVu Sans Mono", monospace;
 }
 
 /*Navigation Bar */
@@ -205,7 +205,7 @@ transition: all 0.3s ease;
 
 /*Hero Section CSS */
 .main{
-    height: 75vh; /* 100% of the viewport height */
+    height: 92.5vh; /* 100% of the viewport height */
     display: flex;
     align-items: center; /* Vertically center the content */
     justify-content: center; /* Horizontally center the content */
@@ -216,6 +216,7 @@ transition: all 0.3s ease;
 .main_container{
     display:grid;
     grid-template-columns: 1fr 1fr;
+    align-items:center;
     justify-self: flex;
     margin: 0 auto;
     height: 100;
@@ -228,7 +229,9 @@ transition: all 0.3s ease;
 }
 
 .main_content h1{
-    font-size: 2rem;
+    font-size: 5rem;
+    justify-content: center;
+    align-items:center;
     background-color: #6c63ff;
     background-image: linear-gradient(to top, #6c63ff 0%, #ffb199 100%);
     background-size: 100%;
@@ -236,8 +239,8 @@ transition: all 0.3s ease;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    margin-top: 50px;
-    padding-top: 10px;
+    margin-top: 5px;
+    text-align: center;
 }
 
 .main_content h2{
@@ -249,12 +252,14 @@ transition: all 0.3s ease;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    text-align: center;
 }
 
 .main_content p {
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
+    text-align: center;
 }
 
 /* Social media icons container */
@@ -262,16 +267,27 @@ transition: all 0.3s ease;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3px; /* Space between icons */
+    gap: 50px; /* Space between icons */
     margin-top: 20px;
 }
 
 /* Style for each social media icon */
 .social_icons a {
-    font-size: 50px;
+    font-size: 40px;
     color: #6c63ff;
     text-decoration: none;
-    transition: transform 0.3s, color 0.3s;
+}
+
+.linkedin:hover{
+    color: #720de6;
+}
+
+.github:hover{
+    color: #720de6;
+}
+
+.email:hover{
+    color: #720de6;
 }
 
 /*
@@ -323,7 +339,7 @@ transition: all 0.3s ease;
     display: block;
     margin: 0 auto; /* Ensures the image is centered in its container */
     padding-top: 50px;
-    padding-bottom: 20px
+    padding-bottom: 0px
   }
   
   .main_img--container {
@@ -350,8 +366,9 @@ transition: all 0.3s ease;
     }
 
     .main_content h1{
-        font-size: 2.5rem;
+        font-size: 3rem;
         margin-top: 2rem;
+        padding-top: 100px;
     }
 
     .main_content h2{
@@ -387,17 +404,17 @@ transition: all 0.3s ease;
 
 /*Services Section CSS */
 .services{
-    background: #fff;
+    background: #6c63ff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 60vh;
+    height: 100vh;
 }
 
 .services h1{
-    background-color: #6c63ff;
+    background-color: #fff;
     /* background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);*/
-    background-image: #fff
+    background-image: #fff;
     background-size:100%;
     margin-bottom: 2rem;
     /*how far the heading is from the top of section */
@@ -407,24 +424,48 @@ transition: all 0.3s ease;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    text-align: center;
 }
+
+.services h3{
+    background-color: #fff;
+    /* background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);*/
+    background-image: #fff;
+    background-size:100%;
+    margin-bottom: 2rem;
+    /*how far the heading is from the top of section */
+    font-size: 1rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-left:10rem;
+    margin-right:10rem;
+    text-align: center;
+}
+
+.services li {
+    margin-bottom: auto; /* Adds space between each item */
+    padding-top: 50px;
+  }
 
 .services_container{
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 300vh;
 }
 
 .services_card{
-    margin:2rem;
-    height: 525px;
+    margin:0rem;
+    height: 700px;
     width: 400px;
-    border-radius:4px;
-    background-image: #6c63ff; /*linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6)100%), url('/images/pic2.jpg');*/
+    border-radius:10px;
+    background-color:#fff;
     background-size: cover;
     position: relative;
     color: #6c63ff;
+    outline: 3px solid rgb(185, 185, 209);
 }
 
 .services_card:nth-child(2){
@@ -450,7 +491,7 @@ transition: all 0.3s ease;
     left: 30px;
 }
 
-.services_card button{
+/*.services_card button{
     color: #6c63ff;
     padding: 10px 20px;
     border: none;
@@ -463,13 +504,14 @@ transition: all 0.3s ease;
     font-size: 1rem;
     cursor: pointer;
 }
+    */
 
-.services_card:hover{
+/* .services_card:hover{
     transform: scale(1.075);
     transition: 0.2s ease-in;
     cursor: pointer;
 }
-
+*/
 @media screen and (max-width: 960px)
 {
     .services{
@@ -553,45 +595,6 @@ transition: all 0.3s ease;
 .footer_link--items a:hover{
     color: #6c63ff;
     transition: 0.3s ease-out;
-}
-
-/* Social Icons */
-.social_icon--link{
-    color: #6c63ff;
-    font-size: 24px;
-}
-
-.social_media{
-    /* max-width: 1000px;*/
-    width: 100%;
-}
-
-.social_media--wrap{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    /* max-width: 1000px;*/
-    margin: 40px auto 0 auto;
-}
-
-.social_icons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 240px;
-}
-
-.social_logo{
-    color: #6c63ff;
-    justify-self: flex-start;
-    margin-left: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 5rem;
-    display: flex;
-    align-items: center; 
-    margin-bottom: 16px;
 }
 
 .website_rights{
