@@ -205,7 +205,7 @@ transition: all 0.3s ease;
 
 /*Hero Section CSS */
 .main{
-    height: 100vh; /* 100% of the viewport height */
+    height: 75vh; /* 100% of the viewport height */
     display: flex;
     align-items: center; /* Vertically center the content */
     justify-content: center; /* Horizontally center the content */
@@ -216,18 +216,19 @@ transition: all 0.3s ease;
 .main_container{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    justify-self: center;
+    justify-self: flex;
     margin: 0 auto;
-    height: 50vh;
+    height: 100;
     background-color: #fff;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
-    padding: 0 50px;
+    padding: 0 20px;
+    align-items: container;
 }
 
 .main_content h1{
-    font-size: 5rem;
+    font-size: 2rem;
     background-color: #6c63ff;
     background-image: linear-gradient(to top, #6c63ff 0%, #ffb199 100%);
     background-size: 100%;
@@ -235,6 +236,8 @@ transition: all 0.3s ease;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    margin-top: 50px;
+    padding-top: 10px;
 }
 
 .main_content h2{
@@ -313,14 +316,22 @@ transition: all 0.3s ease;
     width: 100%;
 }
 
-.main_img--container{
-    text-align:center;
-}
-
-#main_img{
-    height: 80%;
-    width: 80%;
-}
+#main_img {
+    max-width: 100%;
+    width: 400px;
+    height: auto; /* Maintains the aspect ratio of the image */
+    display: block;
+    margin: 0 auto; /* Ensures the image is centered in its container */
+    padding-top: 50px;
+    padding-bottom: 20px
+  }
+  
+  .main_img--container {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Vertically center the image */
+    height: 100%; 
+  }
 
 /*Mobile Responsive*/
 @media screen and (max-width:768px){

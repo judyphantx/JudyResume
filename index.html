@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Judy's Website</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="styles.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <!--Navigation Bar Section-->
@@ -31,48 +35,47 @@
   <!-- Add icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!--Hero Section-->
-  <div class="main">
-  <div class="main_container">
-    <div class="row"> <!-- Start a Bootstrap row for the grid layout -->
-        <div class="col-12 col-md-6 text-center text-md-left"> 
-  <div class="main_content">
-  <h1>Hi, I'm Judy! </h1>
-  <h2>Welcome to my site.</h2>
-  <p> MSCS student at the University of Texas at Dallas</p>
-  <div class="social_icons">
-    <a href="https://www.linkedin.com/in/judyphantx/" class="fa fa-linkedin" target="_blank" title="LinkedIn"></a>
-    <a href="https://github.com/judyphantx" class="fa fa-github" target="_blank" title="GitHub"></a>
-    <a href="mailto:judythiphan@gmail.com"> <i class="fa fa-envelope"></i> <!-- Font Awesome Email Icon --></a>
-</div>
- <!--<button class="main_btn"><a href="/">See Projects</a></button>-->
-</div> 
-<div class="col-12 col-md-6 text-center">
-    <div class="main_img--container">
-        <div<img src="images/pic9.svg" alt="pic" id="main_img">
-</div>
-</div>
-</div>
-</div>
+<!-- Hero Section -->
+<div class="main">
+  <div class="col-sm-12">
+    <div class="main_content">
+      <div class="row"> <!-- Start a Bootstrap row for the grid layout -->
+        <!-- Content Section -->
+          <h1>Hi, I'm Judy! </h1>
+          <h2>Welcome to my site.</h2>
+          <p>MSCS student at the University of Texas at Dallas</p>
+          <div class="social_icons">
+            <a href="https://www.linkedin.com/in/judyphantx/" class="fa fa-linkedin" target="_blank" title="LinkedIn"></a>
+            <a href="https://github.com/judyphantx" class="fa fa-github" target="_blank" title="GitHub"></a>
+            <a href="mailto:judythiphan@gmail.com"> <i class="fa fa-envelope"></i></a>
+          </div>
+          <!--<button class="main_btn"><a href="/">See Projects</a></button>-->
+        </div> <!-- End of Content Section -->
+        <!-- Image Section -->
+          <img src="images/pic9.svg" alt="pic" id="main_img" class="img-fluid"> <!-- Fixed image tag -->
+        </div> <!-- End of Image Section -->
+      </div>
+      </div> <!-- End of Row -->
+    </div> <!-- End of Main Container -->
+  </div> <!-- End of Hero Section -->
+  
 
 <!--Services Section-->
 <div class="services">
+  <div class="col-sm-12"></div>
     <h1>Mechanical Engineering Roots, Software Development Future</h1>
-    <h3>A</h3>
+    <h3>About Me</h3>
     <div class="services_container">
-        <div class="col-12 col-md-4 col-lg-4">
         <div class="services_card">
             <h2> Education</h2>
             <p></p>
             <button>Get Started</button>
         </div>
-        <div class="col-12 col-md-4 col-lg-4">
         <div class="services_card">
             <h2> Experience</h2>
             <p>Take the leap</p>
             <button>Get Started</button>
     </div>
-    <div class="col-12 col-md-4 col-lg-4">
     <div class="services_card">
         <h2> Projects</h2>
         <p>Take the leap</p>
