@@ -129,7 +129,7 @@ transition: all 0.3s ease;
     }
 
     .navbar_menu.active{
-        background: #6c63ff;
+        background: #fff;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
