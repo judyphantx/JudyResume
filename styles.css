@@ -453,8 +453,8 @@
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
   text-align: center;
 }
 
@@ -533,6 +533,12 @@
   text-decoration: none;
   padding-top: 30px;
   font-size: 50px;
+  position: relative;
+  z-index: 10; /* Ensure it stays on top */
+}
+
+.git:hover {
+  color: #720de6;
 }
 
 .services li {
