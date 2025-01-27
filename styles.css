@@ -288,6 +288,10 @@
   color: #720de6;
 }
 
+.resume:hover {
+  color: #720de6;
+}
+
 /*
 .main_btn{
     font-size: 1rem;
@@ -415,7 +419,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 135vh;
+  min-height: 50vh;
+  max-height: 150vh;
 }
 
 .services h1 {
@@ -607,7 +612,8 @@
 
 @media screen and (max-width: 960px) {
   .services {
-    height: 2650px;
+    min-height: 2500px;
+    max-height: 32750px;
   }
 
   .services h1 {
@@ -619,7 +625,8 @@
 
 @media screen and (max-width: 480px) {
   .services {
-    height: 2650px;
+    min-height: 2500px;
+    max-height: 2750px;
   }
 
   .services h1 {
