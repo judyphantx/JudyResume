@@ -419,8 +419,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 50vh;
-  max-height: 150vh;
+  min-height: 500px;
+  max-height: 1000px;
 }
 
 .services h1 {
@@ -613,7 +613,7 @@
 @media screen and (max-width: 960px) {
   .services {
     min-height: 2500px;
-    max-height: 32750px;
+    max-height: 3750px;
   }
 
   .services h1 {
